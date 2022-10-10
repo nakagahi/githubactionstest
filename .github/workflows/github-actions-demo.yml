@@ -9,3 +9,5 @@ jobs:
           echo "ths is env=$ENV_1"
         env: 
           ENV_1: hashito
+      - run: |
+          echo "(2) ths is env=$ENV_1"
