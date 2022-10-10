@@ -1,13 +1,6 @@
-name: learn-github-actions
-on: [push]
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: |
-          echo "ths is env=$ENV_1"
-        env: 
-          ENV_1: hashito
-      - run: |
-          echo "(2) ths is env=$ENV_1"
+    - name: Access to secret
+      env:
+        ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+        SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+      run: |
+        echo ##access to $ACCESS_KEY if this script is bash
