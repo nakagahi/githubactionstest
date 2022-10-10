@@ -1,6 +1,6 @@
-    - name: Access to secret
-      env:
-        ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-        SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-      run: |
-        echo ##access to $ACCESS_KEY if this script is bash
+- name: Access to secret
+  env:
+    ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+    SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+  run: |
+    echo ##access to $ACCESS_KEY if this script is bash
