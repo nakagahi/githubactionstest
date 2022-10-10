@@ -1,0 +1,10 @@
+name: Access to secret
+
+  jobs:
+    name: Aws connect
+    runs-on: ubuntu-latest
+    run: |
+      echo ##access to $ACCESS_KEY if this script is bash
+    env:
+      ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+      SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
