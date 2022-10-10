@@ -1,4 +1,4 @@
-- name: Access to secret
+name: Access to secret
   env:
     ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
     SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
