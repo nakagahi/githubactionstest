@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          echo "ths is env=${{ env.env_1 }}"
+          echo "ths is env=$ENV_1"
       - env:
         ENV_1: nakagawa
